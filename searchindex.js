@@ -13,7 +13,7 @@ function SearchPage(url, title, keywords, description)
 function SearchDatabase()
 {
    database_length = 0;
-   this[database_length++] = new SearchPage("Home.html", "Liaochao", " ", "");
+   this[database_length++] = new SearchPage("index.html", "Liaochao", " ", "");
    this[database_length++] = new SearchPage("About.html", "Liaochao", " ", "");
    this[database_length++] = new SearchPage("Contracts.html", "Liaochao", " ", "");
    this[database_length++] = new SearchPage("Blog.html", "Liaochao", " ", "");
