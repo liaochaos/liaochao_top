@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>Liaochao</title>
+<meta name="generator" content="WYSIWYG Web Builder 14 Trial Version - http://www.wysiwygwebbuilder.com">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="wht.css" rel="stylesheet">
+<link href="Home.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script src="wb.overlay.min.js"></script>
+<script src="wb.drilldownmenu.min.js"></script>
+<script src="wwb14.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'push', position: 'right', toggle: true});
+   var $overlaymenu = $('#OverlayMenu1-overlay');
+   $overlaymenu.overlay({'hideTransition':true});
+   $('.OverlayMenu1').drilldownmenu({backText: 'Back'});
+   $('#OverlayMenu1').on('click', function(e)
+   {
+      $.overlay.show($overlaymenu);
+      return false;
+   });
+   $("#PanelMenu2").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'push', position: 'right', toggle: true});
+});
+</script>
+</head>
+<body>
+<div id="space"><br></div>
+<div id="container">
+<div id="Background" style="position:absolute;text-align:center;left:12px;top:35px;width:970px;height:998px;z-index:24;" onclick="ShowObject('TabMenu1', 1);return false;">
+<div id="Background_Container" style="width:970px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<iframe name="InlineFrame1" id="InlineFrame_home" style="position:absolute;left:0px;top:0px;visibility:hidden;width:968px;height:996px;z-index:2;" src=""></iframe>
+<div id="wb_Logo" style="position:absolute;left:78px;top:55px;width:45px;height:45px;z-index:3;">
+<a href="./Home.html"><img src="images/logo.png" id="Logo" alt=""></a></div>
+</div>
+</div>
+<div id="wb_PanelMenu1" style="position:absolute;left:840px;top:90px;width:58px;height:46px;text-align:center;z-index:25;">
+<a href="#PanelMenu1_markup" id="PanelMenu1">es</a>
+<div id="PanelMenu1_markup">
+<ul role="menu">
+   <li role="menuitem"><a href="">Home</a></li>
+   <li role="menuitem"><a href="">About Me</a></li>
+   <li role="menuitem"><a href="">Gallery</a></li>
+   <li role="menuitem"><a href="">Blog</a></li>
+   <li role="menuitem"><a href="">Links</a></li>
+</ul>
+</div>
+</div>
+<div id="wb_Form2" style="position:absolute;left:90px;top:212px;width:790px;height:190px;z-index:26;">
+<form name="SearchForm" method="get" action="" id="Form2">
+<div id="wb_TabMenu2" style="position:absolute;left:110px;top:0px;width:313px;height:32px;z-index:12;overflow:hidden;">
+<ul id="TabMenu2">
+<li><a href="http://" onclick="ShowObject('wb_Form3', 0);ShowObject('wb_Form4', 0);ShowObject('wb_Form5', 0);ShowObject('wb_Form1', 1);return false;">百度</a></li>
+<li><a href="http://" onclick="ShowObject('wb_Form3', 0);ShowObject('wb_Form1', 0);ShowObject('wb_Form4', 1);ShowObject('wb_Form5', 0);return false;">必应</a></li>
+<li><a href="http://" onclick="ShowObject('wb_Form4', 0);ShowObject('wb_Form1', 0);ShowObject('wb_Form3', 1);ShowObject('wb_Form5', 0);return false;">谷歌</a></li>
+<li><a href="http://" onclick="ShowObject('wb_Form5', 1);ShowObject('wb_Form1', 0);ShowObject('wb_Form3', 0);ShowObject('wb_Form4', 0);return false;">Github</a></li>
+</ul>
+</div>
+<div id="wb_Form1" style="position:absolute;left:122px;top:60px;width:303px;height:25px;z-index:13;">
+<form name="SearchForm" method="get" action="http://www.baidu.com/s?wd=%s" id="Form1">
+<input type="submit" id="Button3" name="submit" value="百度一下" style="position:absolute;left:0px;top:0px;width:96px;height:25px;z-index:4;">
+<input type="text" id="Editbox2" style="position:absolute;left:103px;top:0px;width:190px;height:15px;z-index:5;" name="word" value="" spellcheck="false">
+</form>
+</div>
+<div id="wb_Form4" style="position:absolute;visibility:hidden;left:122px;top:96px;width:303px;height:25px;z-index:14;">
+<form name="SearchForm" method="get" action="http://www.bing.com/search" id="Form4">
+<input type="submit" id="Button5" name="submit" value="Bing" style="position:absolute;left:0px;top:0px;width:96px;height:25px;z-index:6;">
+<input type="text" id="Editbox4" style="position:absolute;left:103px;top:0px;width:190px;height:15px;z-index:7;" name="q" value="" spellcheck="false">
+</form>
+</div>
+<div id="wb_Form3" style="position:absolute;visibility:hidden;left:122px;top:130px;width:303px;height:25px;z-index:15;">
+<form name="SearchForm" method="get" action="http://www.google.com/search" id="Form3">
+<input type="submit" id="form2" name="submit" value="好手气" style="position:absolute;left:0px;top:0px;width:96px;height:25px;z-index:8;">
+<input type="text" id="Editbox3" style="position:absolute;left:103px;top:0px;width:190px;height:15px;z-index:9;" name="q" value="" spellcheck="false">
+</form>
+</div>
+<div id="wb_Form5" style="position:absolute;visibility:hidden;left:122px;top:165px;width:303px;height:25px;z-index:16;">
+<form name="SearchForm" method="get" action="http://www.github.com/search" id="Form5">
+<input type="submit" id="Button6" name="submit" value="Git" style="position:absolute;left:0px;top:0px;width:96px;height:25px;z-index:10;">
+<input type="text" id="Editbox5" style="position:absolute;left:103px;top:0px;width:190px;height:15px;z-index:11;" name="q" value="" spellcheck="false">
+</form>
+</div>
+<div id="wb_OverlayMenu1" style="position:absolute;left:530px;top:20px;width:42px;height:40px;z-index:17;">
+<a href="#" id="OverlayMenu1">
+<span class="line"></span>
+<span class="line">
+</span><span class="line"></span>
+</a>
+</div>
+</form>
+</div>
+<div id="wb_Form6" style="position:absolute;left:90px;top:402px;width:790px;height:528px;z-index:27;">
+<form name="Form6" method="post" action="mailto:yourname@yourdomain.com" enctype="multipart/form-data" id="Form6">
+</form>
+</div>
+<div id="wb_PanelMenu2" style="position:absolute;left:840px;top:90px;width:58px;height:46px;text-align:center;z-index:28;">
+<a href="#PanelMenu2_markup" id="PanelMenu2">es</a>
+<div id="PanelMenu2_markup">
+<ul role="menu">
+   <li role="menuitem"><a href="">Home</a></li>
+   <li role="menuitem"><a href="">About Me</a></li>
+   <li role="menuitem"><a href="">Gallery</a></li>
+   <li role="menuitem"><a href="">Blog</a></li>
+   <li role="menuitem"><a href="">Links</a></li>
+</ul>
+</div>
+</div>
+<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb14.png" alt="WYSIWYG Web Builder" style="position:absolute;left:880px;top:930px;margin: 0;border-width:0;z-index:250"></a>
+</div>
+<div id="OverlayMenu1-overlay">
+<div class="OverlayMenu1">
+<ul class="drilldown-menu" role="menu">
+<li><a role="menuitem" href="#"><i class="fa fa-home overlay-icon"></i>Home</a></li>
+<li>
+<a role="menuitem" href="#"><i class="fa fa-book overlay-icon"></i>Blog</a>
+<ul class="drilldown-submenu" role="menu">
+<li>
+<a role="menuitem" href="#"><i class="fa fa-eye overlay-icon"></i>Design</a>
+<ul class="drilldown-submenu" role="menu">
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;1</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;2</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+<li>
+<a role="menuitem" href="#"><i class="fa fa-html5 overlay-icon"></i>HTML</a>
+<ul class="drilldown-submenu" role="menu">
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;1</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;2</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+<li>
+<a role="menuitem" href="#"><i class="fa fa-css3 overlay-icon"></i>CSS</a>
+<ul class="drilldown-submenu" role="menu">
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;1</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;2</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+<li>
+<a role="menuitem" href="#"><i class="fa fa-code overlay-icon"></i>JavaScript</a>
+<ul class="drilldown-submenu" role="menu">
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;1</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;2</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a role="menuitem" href="#"><i class="fa fa-gear overlay-icon"></i>Work</a>
+<ul class="drilldown-submenu" role="menu">
+<li>
+<a role="menuitem" href="#"><i class="fa fa-desktop overlay-icon"></i>Web&nbsp;Design</a>
+<ul class="drilldown-submenu" role="menu">
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;1</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;2</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+<li>
+<a role="menuitem" href="#"><i class="fa fa-picture-o overlay-icon"></i>Typography</a>
+<ul class="drilldown-submenu" role="menu">
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;1</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;2</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+<li>
+<a role="menuitem" href="#"><i class="fa fa-envelope overlay-icon"></i>Applications</a>
+<ul class="drilldown-submenu" role="menu">
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;1</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;2</a></li>
+<li><a role="menuitem" href="#">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a role="menuitem" href="#"><i class="fa fa-user overlay-icon"></i>About</a></li>
+   </ul>
+</div>
+<a class="close-button" id="OverlayMenu1-close" href="#" role="button" aria-hidden="true"><span></span></a>
+</div>
+</body>
+</html>
